@@ -281,7 +281,7 @@ input, select, textarea {
   Droid Sans,
   Helvetica Neue,
   sans-serif
-  
+
 }
 .redux-icon {
   height: 70px;
@@ -2388,7 +2388,7 @@ input, select, textarea {
 		header.major:after {
       background: #e44c65;
       /* background: #f30; */
-      
+
 			content: '';
 			display: inline-block;
 			height: 0.2em;
