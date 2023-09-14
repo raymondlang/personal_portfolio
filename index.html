@@ -277,11 +277,7 @@
           <header>
             <h2>Contact</h2>
           </header>
-          <form
-            id="gform"
-            method="post"
-            action="https://script.google.com/macros/s/AKfycbwRecvMmv6y7N2OwQuk0XMxiuLSNXND8lHuY1g0ghUXhMjh_zI7ymuc2m0a-QjmSsJpeQ/exec"
-          >
+          <form id="gform" method="post">
             <div class="row gtr-uniform gtr-50">
               <div class="col-6 col-12-xsmall">
                 <input
@@ -302,8 +298,8 @@
                   placeholder="Email"
                 />
                 <span id="email-invalid" style="display: none">
-                  Must be a valid email address</span
-                >
+                  Must be a valid email address
+                </span>
               </div>
               <div class="col-12">
                 <textarea
@@ -327,17 +323,46 @@
               <em>Thanks</em> for contacting me! I will get back to you shortly!
             </h2>
           </div>
-          <script
-            data-cfasync="false"
-            type="text/javascript"
-            src="form-submission-handler.js"
-          ></script>
-          <!-- <form method="post" action="#" class="cta">
-                            							<div class="row gtr-uniform gtr-50">
-                            								<div class="col-8 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
-                            								<div class="col-4 col-12-xsmall"><input type="submit" value="Get Started" class="fit primary" /></div>
-                            							</div>
-                            						</form> -->
+          <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              const form = document.getElementById("gform");
+              const thankYouMessage =
+                document.getElementById("thankyou_message");
+
+              form.addEventListener("submit", function (e) {
+                e.preventDefault(); // Prevent the default form submission behavior
+
+                // Serialize form data into a URL-encoded string
+                const formData = new FormData(form);
+
+                // Create a new XMLHttpRequest object
+                const xhr = new XMLHttpRequest();
+
+                // Configure the request
+                xhr.open(
+                  "POST",
+                  "https://script.google.com/macros/s/AKfycbwRecvMmv6y7N2OwQuk0XMxiuLSNXND8lHuY1g0ghUXhMjh_zI7ymuc2m0a-QjmSsJpeQ/exec",
+                  true
+                );
+                xhr.setRequestHeader(
+                  "Content-Type",
+                  "application/x-www-form-urlencoded"
+                );
+
+                // Handle the response
+                xhr.onreadystatechange = function () {
+                  if (xhr.readyState === 4 && xhr.status === 200) {
+                    // The request was successful, show the thank you message
+                    form.style.display = "none"; // Hide the form
+                    thankYouMessage.style.display = "block"; // Show the thank you message
+                  }
+                };
+
+                // Send the form data
+                xhr.send(new URLSearchParams(formData));
+              });
+            });
+          </script>
         </div>
       </section>
 
