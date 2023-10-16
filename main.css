@@ -417,7 +417,7 @@ pre code {
 }
 
 .python-icon {
-  height: 95px;
+  height: 95px !important;
   margin-right: 15px;
   margin-top: 19px;
 }
