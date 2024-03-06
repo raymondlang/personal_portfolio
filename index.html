@@ -198,6 +198,26 @@
                 <a
                   style="color: transparent"
                   class="hover-link"
+                  href="./bytebud.html"
+                >
+                  <span class="icon alt major fa-gamepad">
+                    <link
+                      src="https://i.ibb.co/HdM0KxR/logo.png"
+                      alt="ByteBud icon"
+                  /></span>
+                </a>
+                <a href="bytebud.html" class="link-project">
+                  <h3>ByteBud</h3>
+                  <p>
+                    Full stack social media application with dynamic system for
+                    uploading posts and interactive voting system.
+                  </p>
+                </a>
+              </section>
+              <section class="col-4 col-6-medium col-12-xsmall">
+                <a
+                  style="color: transparent"
+                  class="hover-link"
                   href="./finalytics.html"
                 >
                   <span class="icon alt major fa-bitcoin"></span>
@@ -331,7 +351,10 @@
           <header>
             <h2>Contact</h2>
           </header>
-          <form id="gform" method="post">
+          <form
+            action="https://formsubmit.co/raymond.w.lang@gmail.com"
+            method="POST"
+          >
             <div class="row gtr-uniform gtr-50">
               <div class="col-6 col-12-xsmall">
                 <input
@@ -371,52 +394,14 @@
                 </ul>
               </div>
             </div>
+            <button type="submit">Send</button>
           </form>
+          <form id="gform" method="post"></form>
           <div style="display: none" id="thankyou_message">
             <h2>
               <em>Thanks</em> for contacting me! I will get back to you shortly!
             </h2>
           </div>
-          <script>
-            document.addEventListener("DOMContentLoaded", function () {
-              const form = document.getElementById("gform");
-              const thankYouMessage =
-                document.getElementById("thankyou_message");
-
-              form.addEventListener("submit", function (e) {
-                e.preventDefault(); // Prevent the default form submission behavior
-
-                // Serialize form data into a URL-encoded string
-                const formData = new FormData(form);
-
-                // Create a new XMLHttpRequest object
-                const xhr = new XMLHttpRequest();
-
-                // Configure the request
-                xhr.open(
-                  "POST",
-                  "https://script.google.com/macros/s/AKfycbwJ9Tq_ghoDnQTezBMsG1XYdDpLO_-acHTaHgHGJdB-9auBbpFLd0kD_VaKNVt84Uikgg/exec",
-                  true
-                );
-                xhr.setRequestHeader(
-                  "Content-Type",
-                  "application/x-www-form-urlencoded"
-                );
-
-                // Handle the response
-                xhr.onreadystatechange = function () {
-                  if (xhr.readyState === 4 && xhr.status === 200) {
-                    // The request was successful, show the thank you message
-                    form.style.display = "none"; // Hide the form
-                    thankYouMessage.style.display = "block"; // Show the thank you message
-                  }
-                };
-
-                // Send the form data
-                xhr.send(new URLSearchParams(formData));
-              });
-            });
-          </script>
         </div>
       </section>
 
