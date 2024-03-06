@@ -33,7 +33,7 @@ code,
 del,
 dfn,
 em,
-img,
+/* img, */
 ins,
 kbd,
 q,
@@ -349,12 +349,9 @@ pre code {
   margin-top: 22px;
 }
 
-.flask-icon {
-  height: 75px;
-  border-radius: 50%;
-  background-color: white;
-  justify-content: center;
+.logos {
   align-items: center;
+  justify-content: center;
 }
 
 .js-icon {
@@ -364,6 +361,14 @@ pre code {
   /* margin-bottom: 8px; */
   margin-top: 31px;
   margin-right: 20px;
+}
+
+.flask-icon {
+  height: 75px;
+  border-radius: 50%;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
 }
 
 .react-icon {
@@ -431,6 +436,11 @@ pre code {
 }
 
 .sql-icon {
+  height: 90px;
+  margin-top: 7px;
+}
+
+.sqs-icon {
   height: 90px;
   margin-top: 7px;
 }
