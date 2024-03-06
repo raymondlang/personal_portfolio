@@ -70,7 +70,10 @@
               <span class="icon alt major fa-gamepad icon-link"></span>
             </a>
             <h2>ByteBud</h2>
-            <p>A group trip planning app built on the MERN stack.</p>
+            <p>
+              Discord-inspired app allows users to create servers to interact in
+              real-time with their communities.
+            </p>
             <ul class="icons" style="margin-bottom: 5px">
               <li>
                 <a
@@ -95,15 +98,15 @@
           <section id="content">
             <div class="serp-gifs-container">
               <img
-                src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXEzeGwzcDl6OG1kMnV3cG9yeHVjbHkzOHhtenA2d2RlemcwM2lzdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qblv0LDTekEkKw0cNV/giphy.gif"
+                src="https://media.giphy.com/media/Gnf2W0BBWrSZgtqANK/giphy.gif"
                 alt=""
               />
               <img
-                src="https://media.giphy.com/media/BQLmFoyv7Kr2pStjiH/giphy.gif"
+                src="https://media.giphy.com/media/oR2UhQwcwKOUZW26nD/giphy.gif"
                 alt=""
               />
               <img
-                src="https://media.giphy.com/media/ZHaC8x44eDIOqezFVc/giphy.gif"
+                src="https://media.giphy.com/media/0VPXakwUdzgKOQ9bkR/giphy.gif"
                 alt=""
               />
             </div>
@@ -122,17 +125,18 @@
 
             <h3>Technologies</h3>
             <div style="display: flex; flex-wrap: wrap">
-              <img class="icon" src="images/html5_logo1.png" />
+              <!-- <img class="icon" src="images/html5_logo1.png" />
               <img class="icon" src="images/css_logo1.png" />
               <img
                 class="js-icon"
                 style="margin-right: 35px"
                 src="images/JavaScript-logo.png"
-              />
+              /> -->
+              <img class="flask-icon" src="images/flask logo.png" />
+              <img class="sql-icon" src="images/python.png" />
               <img class="js-icon" src="images/JavaScript-logo.png" />
               <img class="react-icon" src="images/react.png" />
               <img class="sql-icon" src="images/postgres.png" />
-              <img class="sql-icon" src="images/python.png" />
               <img class="sql-icon" src="images/sql.png" />
               <!-- <div class="webpack-container">
                 <img class="redux-icon" src="images/webpack.png" />
@@ -142,20 +146,23 @@
             </div>
             <h3>Approach</h3>
             <ul>
-              <li>Database level authentication to keep trip pages private</li>
               <li>
-                Seamless rending of a users list, chats, and trip itinerary tabs
-                through direct updates to state upon user inputs
+                Database level authentication to keep messaging, servers,
+                channels private
               </li>
               <li>
-                Data structures in MongoDB to ensure trippages were made private
-                granting authorized user permission to add a new user, comment,
-                or itinerary item
+                Utilize websockets with Socket.io to implement real-time
+                messaging in channels between members of the server of that
+                channel
               </li>
               <li>
-                Redux store to efficiently load access to trips based on a
-                currently logged-in user and allow seamless transitions between
-                various private trip pages
+                Develop backend using Flask as framework to allow for
+                flexibility and simplicity while scaling app
+              </li>
+              <li>
+                RESTful API endpoints for Create, Read, Update, and Delete
+                operations for users, friends, servers, channels, messages, and
+                reaction
               </li>
             </ul>
           </section>
