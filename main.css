@@ -438,9 +438,10 @@ pre code {
 .sql-icon {
   height: 90px;
   margin-top: 7px;
-  border-radius: 50%;
+  padding: 1px;
+  /* border-radius: 50%;
   background-color: white;
-  align-items: center;
+  align-items: center; */
 }
 
 .mongo-icon {
