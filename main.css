@@ -362,8 +362,7 @@ pre code {
   margin-top: 31px;
   margin-right: 20px;
 }
-
-.screenshot-icon {
+f .screenshot-icon {
   height: 200px;
   border-radius: 3px;
   margin-left: 11px;
@@ -373,11 +372,7 @@ pre code {
 }
 
 .flask-icon {
-  height: 75px;
-  border-radius: 50%;
-  background-color: white;
-  justify-content: center;
-  align-items: center;
+  height: 100px;
 }
 
 .react-icon {
