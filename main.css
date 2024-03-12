@@ -363,7 +363,8 @@ pre code {
   margin-right: 20px;
 }
 f .screenshot-icon {
-  height: 100px;
+  /* height: 100px; */
+  object-fit: cover;
   border-radius: 3px;
   margin-left: 11px;
   /* margin-bottom: 8px; */
