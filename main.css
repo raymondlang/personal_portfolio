@@ -362,9 +362,9 @@ pre code {
   margin-top: 31px;
   margin-right: 20px;
 }
-f .screenshot-icon {
-  /* height: 100px; */
-  object-fit: cover;
+
+.screenshot-icon {
+  height: 100px;
   border-radius: 3px;
   margin-left: 11px;
   /* margin-bottom: 8px; */
