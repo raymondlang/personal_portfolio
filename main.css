@@ -371,8 +371,17 @@ f .screenshot-icon {
   margin-right: 20px;
 }
 
-.flask-icon {
+.icon-size {
   height: 100px;
+}
+
+f .flask-icon {
+  height: 200px;
+  border-radius: 3px;
+  margin-left: 11px;
+  /* margin-bottom: 8px; */
+  margin-top: 31px;
+  margin-right: 20px;
 }
 
 .react-icon {
