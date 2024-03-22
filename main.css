@@ -359,7 +359,7 @@ pre code {
   justify-content: center;
 }
 
-.red-button {
+.a .red-button {
   background-color: #ffcccc;
   color: white;
   padding: 10px 40px;
@@ -370,7 +370,7 @@ pre code {
   margin: 10px;
 }
 
-.red-button-outline {
+.a .red-button-outline {
   background-color: transparent;
   color: #ffcccc;
   padding: 10px 40px;
