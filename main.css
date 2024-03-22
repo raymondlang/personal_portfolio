@@ -350,8 +350,40 @@ pre code {
 }
 
 .logos {
-  align-items: center;
+  display: flex;
   justify-content: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.red-button {
+  background-color: #ffcccc;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px;
+}
+
+.red-button-outline {
+  background-color: transparent;
+  color: #ffcccc;
+  padding: 10px 20px;
+  border: 2px solid #ffcccc;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px;
+}
+
+.red-button-outline:hover {
+  background-color: #ffcccc;
+  color: white;
 }
 
 .js-icon {
