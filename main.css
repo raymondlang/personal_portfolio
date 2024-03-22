@@ -386,6 +386,10 @@ pre code {
   color: white;
 }
 
+.red-button:first-child {
+  margin-right: 10px;
+}
+
 .js-icon {
   height: 75px;
   border-radius: 3px;
