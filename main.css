@@ -362,7 +362,7 @@ pre code {
 .red-button {
   background-color: #ffcccc;
   color: white;
-  padding: 10px 20px;
+  padding: 10px 40px;
   border: none;
   border-radius: 5px;
   text-decoration: none;
@@ -373,7 +373,7 @@ pre code {
 .red-button-outline {
   background-color: transparent;
   color: #ffcccc;
-  padding: 10px 20px;
+  padding: 10px 40px;
   border: 2px solid #ffcccc;
   border-radius: 5px;
   text-decoration: none;
